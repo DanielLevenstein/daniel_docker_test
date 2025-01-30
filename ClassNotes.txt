@@ -1,0 +1,14 @@
+Docker Class Notes
+docker pull image:version
+docker run -d -p 80:80 --name web_server nginx:1.27.0
+docker run -d -p 80:80 --name blue web_server_image:blue
+
+Once the web server is running you can access your web server on port 80
+docker ps
+docker exec -it web_server /bin/bash
+
+/usr/share/nginx/html/index.html
+Cleanup command
+docker stop $(docker ps -q)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q)

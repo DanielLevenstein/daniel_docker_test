@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My First Webpage</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>My First Webpage!
+</h1>
+<p>This is my first webpage created using the nginx docker image. This file is located at /usr/share/nginx/html/index.html on the web_server docker image</p>
+<p> In my first version of this website I manually modified the index.html file by logging onto the server. Next I would like to create a docker image that pulls from the nginx:1.27.0 docker image and copy my new index.html file onto that web server directly. </p>
+<p> To do this I will create a Dockerfile locally and as the first command in the docker file I will copy my new HTML page onto the server. </p>
+<P> Modifications to this file require you to rebuild the docker image, which may require first deleting the existing running image. </P>
+</body>
+</html>
